@@ -1,0 +1,14 @@
+appId: host.exp.exponent
+---
+- launchApp
+# Direct link straight to the login route path
+- openLink: "exp://10.12.73.85:8081/login"
+- waitForAnimationToEnd:
+    timeout: 10000
+
+# You are now navigated onto the login screen page
+- tapOn:
+    id: "username-input"
+- inputText: "maestro_tester"
+- tapOn:
+    id: "login-button"
