@@ -1,12 +1,11 @@
-appId: host.exp.exponent
+appId: com.hacker.mobileapp
 ---
 - launchApp
-# Direct link straight to the login route path
-- openLink: "exp://10.12.73.85:8081/login"
-- waitForAnimationToEnd:
-    timeout: 10000
 
-# You are now navigated onto the login screen page
+# 1. NAVIGATE: Deep link directly into the native login file path
+- openLink: "mobileapp://login"
+
+# 2. ACT: Enter your details directly
 - tapOn:
     id: "username-input"
 - inputText: "maestro_tester"
